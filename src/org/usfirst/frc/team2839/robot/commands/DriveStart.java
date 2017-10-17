@@ -74,6 +74,8 @@ public class DriveStart extends Command {
     	Robot.rrDrive.setSpeed(Robot.rrDrivePID.getOutput());
     	Robot.lrDrivePID.setSetpoint(speed);
     	Robot.lrDrive.setSpeed(Robot.lrDrivePID.getOutput());
+    	
+    	//Robot.lrDrive.setSpeed(Robot.lrDrivePID.getOutput()+Robot.oi.joystick.getThrottle());  //simulated joystick angle input to summing junction for Blake's swerve
     }
 
     // Make this return true when this Command no longer needs to run execute()

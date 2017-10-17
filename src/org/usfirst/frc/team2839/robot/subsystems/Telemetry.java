@@ -23,6 +23,7 @@ public class Telemetry extends Subsystem {
 		SmartDashboard.putNumber("RFD rate", Robot.rfDrive.getEncoderRate());
 		SmartDashboard.putNumber("RRD rate", Robot.rrDrive.getEncoderRate());
 		SmartDashboard.putNumber("LRD rate", Robot.lrDrive.getEncoderRate());
+		SmartDashboard.putNumber("Rate delta", Robot.lrDrive.getEncoderRate()-Robot.rrDrive.getEncoderRate());
 		//SmartDashboard.putNumber("ArcTangent", Math.atan(RobotPreferences.wheelbase()/RobotPreferences.treadwidth())*57.296);
 	}
 

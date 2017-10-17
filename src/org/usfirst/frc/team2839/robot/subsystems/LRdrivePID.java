@@ -55,6 +55,8 @@ public class LRdrivePID extends PIDSubsystem {
     		return 0.0;
     	}
     	return output;
+    	
+    	//return output+Robot.oi.joystick.getTwist();  //simulated analog encoder input to summing junction for Blake's swerve
     }
     public void setRawTolerance(double tolerance) {
     	this.tolerance = tolerance;

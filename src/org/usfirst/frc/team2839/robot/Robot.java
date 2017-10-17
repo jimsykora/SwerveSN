@@ -137,6 +137,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void autonomousPeriodic() {
+		telemetry.update();  //makes SmartDashboard live when in disabled mode
 		Scheduler.getInstance().run();
 	}
 

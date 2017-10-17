@@ -22,7 +22,7 @@ public class RRsteerPID extends PIDSubsystem {
         // enable() - Enables the PID controller.
     	super("RRsteerPID",0,0,0);
     	this.setSetpoint(0.0);
-    	getPIDController().setContinuous(true);
+    	getPIDController().setContinuous(true); //allows PID loop to handle abrupt change from 5 to 0 volts as encoder turns
     }
 
     public void enable()  {
